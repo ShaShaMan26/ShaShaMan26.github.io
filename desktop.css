@@ -44,6 +44,7 @@ body {
     }
     li {
         font-family: lato;
+        max-width: 90%;
     }
     a {
         color: #99582a;
