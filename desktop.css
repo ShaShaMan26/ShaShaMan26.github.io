@@ -1,0 +1,144 @@
+@font-face {
+    font-family: open-sans;
+    src: url(./resources/font/opensans-reg.ttf);
+}
+@font-face {
+    font-family: inconsolata;
+    src: url(./resources/font/inconsolata-reg.ttf);
+}
+@font-face {
+    font-family: lato;
+    src: url(./resources/font/lato-reg.ttf);
+}
+@font-face {
+    font-family: futura;
+    src: url(./resources/font/futura-light.ttf);
+}
+@font-face {
+    font-family: titillium;
+    src: url(./resources/font/titillium-reg.ttf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcfcfc;;
+}
+
+#main {
+    background-color: #FAF9F5;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1% 3% 5% 3%;
+    
+    h1 {
+        font-family: futura;
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-family: inconsolata;
+        font-size: 1.75rem;
+    }
+    li {
+        font-family: lato;
+    }
+    a {
+        color: #99582a;
+    }
+    a:hover {
+        color: #b08968;
+    }
+    img {
+        pointer-events: none;
+        user-select: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 1%;
+    }
+}
+
+#info {
+    p {
+        font-family: lato;
+    }
+}
+
+#sum {
+    display: inline-flex;
+    gap: 2.5%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#desc {
+    width: 100%;
+    height: 100%;
+    background-color: #abb0a570;
+    border-radius: 1%;
+    box-sizing: border-box;
+    padding: 1% 2% 2% 2%;
+    p {
+        font-family: open-sans;
+    }
+}
+
+#detail {
+    p {
+        font-family: open-sans;
+    }
+}
+
+.highlightReel {
+    /* pointer-events: none;
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 1%; */
+}
+
+.example {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1% 12% 2% 12%;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    img {
+        max-width: 50%;
+    }
+}
+
+footer {
+    background-color: #898b87;
+    width: 100%;
+    display: inline-flex;
+    align-content: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: .25% 1% .25% 1%;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    p {
+        font-family: titillium;
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 15%;
+    max-width: 10%;
+    img:hover{
+        opacity: 50%;
+        transition: opacity .2s ease;
+    }
+}
