@@ -26,7 +26,8 @@ body {
     justify-content: center;
     align-items: center;
     /* background-color: #fcfcfc; */
-    background-color: #f5f6fa;
+    /* background-color: #f5f6fa; */
+    background-color: #FAF9F5;
 }
 
 #main {
@@ -34,8 +35,8 @@ body {
     width: 80%;
     box-sizing: border-box;
     padding: .5% 3% 5% 3%;
-    margin-top: 1%;
-    margin-bottom: 1.5%;
+    /* margin-top: 1%;
+    margin-bottom: 1.5%; */
 
     border-radius: .5%;
     
@@ -157,9 +158,65 @@ footer {
     align-items: center;
     margin-left: auto;
     gap: 15%;
-    max-width: 10%;
+    max-width: 8%;
     img:hover{
         opacity: 50%;
         transition: opacity .2s ease;
     }
+}
+
+.navbar {
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navtitle {
+}
+
+.navbuttons {
+    display: grid;
+    grid-auto-flow: column;
+}
+.navbuttons a, .dropbtn {
+    text-decoration: none;
+    border: none;
+    
+    font-family: futura;
+    font-size: 1.75rem;
+
+    background-color: black;
+    color: white;
+
+    padding: 10%;
+
+}
+.navbuttons a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+.dropbtn {
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    a {
+        display: block;
+        /* text-align: center; */
+        background-color: gray;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: lightblue;
+    }
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
