@@ -139,6 +139,7 @@ body {
 .projectcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
     row-gap: 2%;
     column-gap: 1%;
     width: 100%;
@@ -146,12 +147,9 @@ body {
 }
 .projectcapsule {
     position: relative;
-    align-items: center;
     box-sizing: border-box;
     padding: 2% 3% 2% 2%;
     background-color: #abb0a570;
-    display: flex;
-    justify-content: space-between;
     gap: 1%;
     border-color: #5C4033;
     border-style: solid;
@@ -176,6 +174,7 @@ body {
     flex-basis: auto;
     width: 33% !important;
     border-radius: inherit !important;
+    float: left;
 }
 .projdesc {
     width: 66%;
@@ -183,6 +182,21 @@ body {
     flex-grow: 2;
     flex-basis: auto;
     flex-shrink: 0;
+    float: right;
+}
+.projdesc h2 {
+    font-size: 2rem !important;
+    margin: 0;
+}
+.projdesc .points {
+    font-family: lato;
+    font-size: .9rem;
+    margin: 1% 0 4% 0;
+}
+.projdesc .blurb {
+    font-family: open-sans;
+    font-size: .95rem;
+    margin: 0;
 }
 
 footer {
