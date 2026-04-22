@@ -18,6 +18,10 @@
     font-family: titillium;
     src: url(./resources/font/titillium-reg.ttf);
 }
+@font-face {
+    font-family: sreda;
+    src: url(./resources/font/sreda.ttf);
+}
 
 body {
     margin: 0;
@@ -230,58 +234,52 @@ footer {
 }
 
 .navbar {
+    background-color: #8f795a;
     width: 100%;
-    background-color: gray;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
-
-.navtitle {
-}
-
-.navbuttons {
-    display: grid;
-    grid-auto-flow: column;
-    flex-basis: auto; /*This might work!!!*/
-}
-.navbuttons a, .dropbtn {
-    text-decoration: none;
-    border: none;
-    
-    font-family: futura;
+.navbar p {
+    margin: 0 0 0 .5%;
+    padding: 0;
+    font-family: sreda;
     font-size: 1.75rem;
+    color: #FAF9F5;
+}
+.navbar .navlinks {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    text-align: center;
+    margin-right: .5%;
+}
+.navbar .navlinks a {
+    text-decoration: none;
+    color: #FAF9F5;
+    box-sizing: border-box;
+    padding: 10px;
+    border-color: black;
+    border-width: 1px;
+    font-family: futura;
+    font-size: 1.25rem;
+}
+.navbar .navlinks a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
 
-    background-color: black;
-    color: white;
-
-    padding: 10%;
-
+embed {
+    width: 100%;
+    height: 100%;
 }
-.navbuttons a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown {
-    /* position: relative; */
-    display: inline-block;
-}
-.dropbtn {
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    a {
-        display: block;
-        /* text-align: center; */
-        background-color: gray;
-        text-decoration: none;
-    }
-    a:hover {
-        background-color: lightblue;
-    }
-}
-.dropdown:hover .dropdown-content {
-    display: block;
+.resumeview {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    padding: 2% 10% 0 10%;
 }
