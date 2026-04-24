@@ -1,26 +1,26 @@
 @font-face {
     font-family: open-sans;
-    src: url(./resources/font/opensans-reg.ttf);
+    src: url(/resources/font/opensans-reg.ttf);
 }
 @font-face {
     font-family: inconsolata;
-    src: url(./resources/font/inconsolata-reg.ttf);
+    src: url(/resources/font/inconsolata-reg.ttf);
 }
 @font-face {
     font-family: lato;
-    src: url(./resources/font/lato-reg.ttf);
+    src: url(/resources/font/lato-reg.ttf);
 }
 @font-face {
     font-family: futura;
-    src: url(./resources/font/futura-light.ttf);
+    src: url(/resources/font/futura-light.ttf);
 }
 @font-face {
     font-family: titillium;
-    src: url(./resources/font/titillium-reg.ttf);
+    src: url(/resources/font/titillium-reg.ttf);
 }
 @font-face {
     font-family: sreda;
-    src: url(./resources/font/sreda.ttf);
+    src: url(/resources/font/sreda.ttf);
 }
 
 body {
