@@ -123,6 +123,9 @@ body {
     img {
         max-height: 50%;
     }
+    .singleimg {
+        max-width: 60% !important;
+    }
 }
 .example-caption {
     margin-top: -1%;
