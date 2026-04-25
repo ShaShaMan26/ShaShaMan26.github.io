@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/desktop.css">
+        <title>Projects - Adrenaraid</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <p>Cristiano Porretta</p>
+            <div class="navlinks">
+                <a href="/index.html">Home</a>
+                <a href="/projects/">Projects</a>
+                <a href="/resume.html">Resume</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id = "info">
+                <!--name-->
+                <h1>Adrenaraid (2024)</h1>
+                <!--links-->
+                <p>
+                    <!-- <a href="" target="_blank">GitHub</a>
+                    |  -->
+                    <a href="https://shashamang.itch.io/adrenaraid" target="_blank">Download</a>
+                </p>
+                <!--details-->
+                <p>
+                    <b>Roles</b>: Project Lead | Game Designer | Programmer<br>
+                    <b>Team Size</b>: 3<br>
+                    <b>Duration</b>: ~1 week<br>
+                    <b>Platform</b>: Java Swing<br>
+                </p>
+            </div>
+
+            <div id="sum">
+                <!--Overview-->
+                <img class="highlightReel" src="/resources/img/capsule/adrenaraid.png" alt="">
+                <div id="desc">
+                    <h2>About</h2>
+                    <p>Adrenaraid is a fast-paced arcade action game in which an adrenaline junky rat weaves between supermarket shoppers as it steals food. With each piece of cuisine the rat procures, it grows in its adrenaline-induced intoxication, growing speedier as its vision narrows and caution collapses. Don't stay still. Don't go hungry. Don't get caught.</p>
+                
+                    <!--Features-->
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Fast-paced arcade action.</li>
+                        <li>Addictive risk-reward gameplay.</li>
+                        <li>Adaptive Soundtrack.</li>
+                        <li>Some pretty good puns.</li>
+                        <li>An adorable rat.</li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div id="detail">
+                <!--Development History-->
+                <h2>Development History</h2>
+                <p>About half a year into the development of <a href="/projects/sesame.html">Sesame</a>, I was looking for an opportunity to stress-test its feature set with the creation of an actual game. That was when I found out about <a href="https://trijam.itch.io/" target="_blank">Trijam</a>, a weekly game jam in which participants must create a game according to a given theme in just three hours. The low commitment and easy access to collaborators drew me to eventually join Trijam #270.</p>
+                <p>In preparation for the jam, I joined the designated Discord server and searched for teammates where I met an artist, <a href="https://mrspyder.itch.io/" target="_blank">Spyder</a>, and a musician, <a href="https://open.spotify.com/artist/34NlubZLAaUK22z1sIKBiy" target="_blank">Sul Ponticellist</a>. Together we formed a team of three with Spyder handling the creation of art assets, Sul being responsible for the creation of audio assets, and I acting as the team's programmer, game designer, and project lead. Trijam may be the three hour game jam, but that only applies to active development time and so we spent ample time planning when and what we'd be making.</p>
+                <p>Starting from the theme, “In the Zone,” we first settled on a risk-reward gameplay loop, characterized by an adrenaline junky who gets more and more “in the zone” as they perform riskier and riskier feats. After some creative deliberation, we eventually landed on the idea of a rat who sneaks into a supermarket and steals food to bring back to its rat family, weaving in and out as customers shop.</p>
+                <p>Working on a project with a designated composer for the first time (and having just implemented an audio manager into Sesame), I was eager to float the idea of a score that grew in intensity as the player's adrenaline meter went up. Sul, having never worked on adaptive music before, was gracious enough to take on the challenge and I feel that he absolutely delivered.</p>
+                <!--audio files of music-->
+                <div class="example">
+                    <audio controls><source src="/resources/music/adrenaraid/Level_1.wav">Your browser does not support the audio element.</audio>
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Adaptive score at level 1 (Cat Food).</figcaption>
+                </div>
+                <div class="example">
+                    <audio controls><source src="/resources/music/adrenaraid/Level_2.wav">Your browser does not support the audio element.</audio>
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Adaptive score at level 2 (Rat-venous).</figcaption>
+                </div>
+                <div class="example">
+                    <audio controls><source src="/resources/music/adrenaraid/Level_3.wav">Your browser does not support the audio element.</audio>
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Adaptive score at level 3 (Ratmania).</figcaption>
+                </div>
+                <div class="example">
+                    <audio controls><source src="/resources/music/adrenaraid/Level_4.wav">Your browser does not support the audio element.</audio>
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Adaptive score at level 4 (Ratphoria).</figcaption>
+                </div>
+
+                <p>Originally, the game would have had a day system with an ever increasing quota of food that needed to be met to keep your rat family fed (akin to <a href="https://en.wikipedia.org/wiki/Papers,_Please" target="_blank">Papers, Please</a>). However, due to the harsh time limit and collective lack of experience between the three of us, the game had to be scoped down to just the action segment.</p>
+                
+                <p>Thus, the development of Adrenaraid began… and then promptly ended three hours later.</p>
+                <div class="example">
+                    <img src="/resources/gif/adrenaraid/prototype.gif">
+                    <img src="/resources/gif/adrenaraid/final.gif">
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Prototype (left) and final game (right).</figcaption>
+                </div>
+
+                <!--Reflections-->
+                <h2>Postmortem</h2>
+                <p>Adrenaraid, shockingly, did not win any awards.</p>
+                <p>Rather, it was an incredible exercise in project development. Due to the tight constraints of the jam, diligent planning, coordination, and adaptability were vital to delivering a finished experience. I am incredibly proud of everyone's contributions and had a lot of fun pushing myself alongside other up-and-coming creatives.</p>
+                <p>More personally, Adrenaraid as a project was an opportunity for me to try my hand at being a project lead. Managing collaboration, making progress check-ins, and taking a leadership role was surprisingly engaging and I was exposed to a new side of game development that making silly little games alone could never have shown me.</p>
+                <p>Finally, how was this as a test of Sesame? Omg it was rough. Firstly, I had just started work on the editor and so it was not at all ready to be used in this project.</p>
+                
+                <div class="example">
+                    <img src="/resources/gif/sesame/sesame-editor-v1.gif" class="singleimg">
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>The editor as mentioned above. Didn't even have working level IO. (What was they cooking???)</figcaption>
+                </div>
+
+                <p>That was strike one. Strike two was a lack of animation system which meant all sprites had to be static; limiting the game's visuals. Strike three was less Sesame's fault and more just the toil of working in Java. In order for players to experience Adrenaraid, they had to install a specific version of Java in order to run the packaged JAR file. As such, the game's ease of access was hindered and this limited its appeal as a quick game jam entry.</p>
+                
+                <p>Overall, Adrenaraid was an amazing exercise in project planning, development, and delivery. At the end of the day, the team and I were able to deliver a finished game in just three hours and I am nothing but proud. And, while Sesame clearly needed more work, what was already there allowed for speedy, streamlined iteration that made such a project possible.</p>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <p>&copy; 2026 Cristiano Porretta</p>
+        <div class="socials">
+            <a href="mailto:cristiano.porretta.26@gmail.com" target="_blank" draggable="false"><img src="/resources/img/mail.png"></a>
+            <a href="https://www.linkedin.com/in/cristiano-porretta-74a4483b9/" target="_blank" draggable="false"><img src="/resources/img/linked.png"></a>
+            <a href="https://github.com/ShaShaMan26" target="_blank" draggable="false"><img src="/resources/img/git.png"></a>
+        </div>
+    </footer>
+</html>
