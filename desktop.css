@@ -143,11 +143,24 @@ body {
     width: 1%;
 }
 
+.projectdirectory {
+    text-align: center;
+    font-family: futura;
+    font-size: 1.35rem;
+    a {
+        color: black !important;
+    }
+    a:hover {
+        text-decoration-color: #b08968;
+    }
+}
+
 .projectcontainer {
     width: 100%;
     margin-bottom: 5%;
 }
 .projectcapsule {
+    scroll-margin-top: 30vh;
     position: relative;
     box-sizing: border-box;
     padding: 2% 3% 2% 2%;
