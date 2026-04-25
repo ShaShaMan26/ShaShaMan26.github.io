@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/desktop.css">
+        <title>Projects - Torch</title>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <p>Cristiano Porretta</p>
+            <div class="navlinks">
+                <a href="/index.html">Home</a>
+                <a href="/projects/">Projects</a>
+                <a href="/resume.html">Resume</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id = "info">
+                <!--name-->
+                <h1>Torch (2023)</h1>
+                <!--links-->
+                <p>
+                    <a href="https://github.com/Redninja106/GMTK23" target="_blank">GitHub</a>
+                    | 
+                    <a href="https://shashamang.itch.io/torch" target="_blank">Download</a>
+                </p>
+                <!--details-->
+                <p>
+                    <b>Roles</b>: Lead Game Designer | Assistant Programmer | Graphic Designer<br>
+                    <b>Team Size</b>: 2<br>
+                    <b>Duration</b>: ~3 days<br>
+                    <b>Platform</b>: C# | SimulationFramework<br>
+                </p>
+            </div>
+
+            <div id="sum">
+                <!--Overview-->
+                <img class="highlightReel" src="/resources/img/capsule/torch.png" alt="">
+                <div id="desc">
+                    <h2>About</h2>
+                    <p>Torch is a 2D survival sandbox game akin to <a href="http://en.wikipedia.org/wiki/Terraria" target="_blank">Terraria</a>. However, your goal is not to explore, survive, and conquer the game world. Rather, you play as the world itself, attempting to thwart the progression of an AI-controlled player-character. Utilize three elemental effect cards to manipulate the world in creative ways to stop Torch Guy. Can you discover all 12 endings?</p>
+                    <p>Made as part of <a href="https://itch.io/jam/gmtk-2023" target="_blank">GMTK Game Jam 2023</a>.</p>
+                
+                    <!--Features-->
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Compelling sandbox gameplay.</li>
+                        <li>10+ endings.</li>
+                        <li>Mesmerising particle effects.</li>
+                        <li>Emergent elemental interaction system.</li>
+                        <li>Creative puzzles.</li>
+                    </ul>
+                </div> 
+            </div>
+
+            <div id="detail">
+                <!--Development History-->
+                <h2>Development History</h2>
+                <p>Around the time of <a href="/projects/ssrg.html">SSRG</a>'s development, I became acquainted with <a href="http://wyan.dev" target="_blank">Ryan Anderson</a>. A fellow up-and-coming game developer and talented graphics programmer, Ryan and I quickly bonded over our shared aspirations towards the creation of video games. During one of our late night Discord calls, the idea to enter a game jam together was floated and subsequently agreed upon. Both Ryan and I were fans of the YouTube channel <a href="https://www.youtube.com/@GMTK" target="_blank">Game Maker's Toolkit</a> and, as it would just so happen, the channel would be hosting its yearly game jam that month.</p>
+                <p>And so, this is the story of how two amateur game devs would compete in their first game jam.</p>
+                
+                <p>Once the game jam started and the theme had been revealed, we would have 72 hours to make a finished game and release it to <a href="https://itch.io" target="_blank">itch.io</a>. Being as this was both of our first times participating in a game jam, Ryan and I took ample time to gather a development toolset and organize an effective workflow. Namely, we would be working in Ryan's game development framework, <a href="https://github.com/Redninja106/simulationframework" target="_blank">SimulationFramework</a>. This would serve as an opportunity to test (as well as capitalize on) SimulationFramework's capabilities, along with introducing me to programming in C#.</p>
+                <div class="example">
+                    <img src="/resources/gif/torch/simulationframework1.gif">
+                    <img src="/resources/gif/torch/simulationframework2.gif">
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Example projects made using SimulationFramework.</figcaption>
+                </div>
+
+                <p>Responsibilities for the project were expectedly free-flowing with both of us agreeing to “just kinda do whatever we gotta” until we ended up with a completed game. However, the general role of programmer was attributed to Ryan, with the designation of game designer falling to me.</p>
+                <p>Eventually, the day of the jam arrived; the theme revealed to be “Roles Reversed;” and Ryan and I swiftly got to not doing anything all day. We were busy!</p>
+                <p>With our daily responsibilities taken care of, the two of us met to discuss the theme and brainstorm ideas. Eventually, we landed on the concept of a survival sandbox game (akin to <a href="http://en.wikipedia.org/wiki/Terraria" target="_blank">Terraria</a>) in which players explore, survive, and conquer the game world. But rather than following genre convention, the roles would be reversed and the player would act as the world itself, attempting to thwart the progression of an AI-controlled traditional player-character.</p>
+                <p>Developing the idea further, I suggested a set of elemental abilities that the player could use to affect the game-world in various ways. From that a design doc filled with lofty ideas began to form. We'd have a complex character AI; we'd have expressive animations; multiple win states; resource management; different challenges.</p>
+                <p><b>We needed to make some cuts.</b></p>
+                <p>First thing to go, the <a href="https://en.wikipedia.org/wiki/Hello_Neighbor" target="_blank">Hello Neighbor</a>-esque adaptive AI that would learn from players' actions and reactively adjust its approach to completing tasks. Now the player-character or, as he would come to be called, Torch Guy would simply walk from one end of the screen, collect wood for a Torch, return to the other side of the screen, and light said torch. From there the rest of the game's elements were easy to scale-back. Element interaction system? Ryan had an <a href="https://en.wikipedia.org/wiki/Uno_(card_game)" target="_blank">Uno</a> clone we could nab the card UI from. Expressive character animation? We're not artists! MS Paint programmer art: take it or leave it. Multiple win states/challenges? The world is a sandbox full of unique ways to halt Torch Guy's quest, each one giving you a new ending!</p>
+                <p>With a satisfactory design outline, Ryan was tasked with creating a basic prototype which would include a game world, Torch Guy, and a card-based interaction system. As for me, I was going to bed. Throughout the following day, Ryan would send me updates on the prototype which would be completed by late afternoon.</p>
+                <div class="example">
+                    <img src="/resources/gif/torch/prototype.gif">
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Early prototype footage.</figcaption>
+                </div>
+                
+                <p>We then met for what would become the bulk of Torch's development. With the basic systems working, our time was spent creating assets, menus, and interplay between the element system and game world. Put more honestly, we spent 15 hours in a Discord call cooking some <i>bullsh*t</i>.</p>
+                <div class="example">
+                    <!-- <img src="/resources/gif/torch/ex1.gif"> -->
+                    <img src="/resources/gif/torch/ex2.gif">
+                    <img src="/resources/gif/torch/ex3.gif">
+                </div>
+                
+                <p>By the end of our call, we had a little stick figure man who walked right, mined a tree, walked left, lit a torch, and could die in a variety of exceedingly outlandish ways. And we thought it was the funniest thing. Thanks to SimulationFramework, we were able to make some slick menus that helped contextualize the game as more than an idle program and encouraged players to seek out the different endings achievable through creative use of elemental afflictions.</p>
+                <div class="example">
+                    <img src="/resources/gif/torch/menu.gif">
+                </div>
+
+                <p>It was not glamorous, but it was ours and it was time to publish it for people to play. I spent the early hours of the morning making an itch.io page while Ryan performed bugfixes and polishing. When we were done, we posted the game and went to bed. Waking up for the final day of the jam, we had feedback from early players to review. I compiled a list of changes (and mostly bugfixes) for Ryan to make when he was available and went off to work for the day. By the time I finished my shift, over a dozen people had played and commented on our game.</p>
+
+                <!--Reflections-->
+                <h2>Postmortem</h2>
+                <p>By the conclusion of the jam, over 140 people had played our little game. We received comments, critique, and congratulations on our work, and placed in the top 36% of the 6,688 entries.</p>
+                <div class="example">
+                    <img src="/resources/img/torch/stats.png" class="singleimg">
+                </div>
+                <p>This was my first time collaborating with another developer on a game project and was an amazing opportunity to test my ability to coordinate, iterate, and deliver on a project of this scale. Above all, however, Torch was a chance to have people play a game I worked on. The feedback we received was extremely validating and encouraged me to continue my pursuit of game development.</p>
+            </div>
+        </div>
+    </body>
+
+    <footer>
+        <p>&copy; 2026 Cristiano Porretta</p>
+        <div class="socials">
+            <a href="mailto:cristiano.porretta.26@gmail.com" target="_blank" draggable="false"><img src="/resources/img/mail.png"></a>
+            <a href="https://www.linkedin.com/in/cristiano-porretta-74a4483b9/" target="_blank" draggable="false"><img src="/resources/img/linked.png"></a>
+            <a href="https://github.com/ShaShaMan26" target="_blank" draggable="false"><img src="/resources/img/git.png"></a>
+        </div>
+    </footer>
+</html>
