@@ -19,66 +19,93 @@
         <div id="main">
             <div id = "info">
                 <!--name-->
-                <h1>Sesame Game Engine (Febuary 2024 - October 2026)</h1>
+                <h1>Sesame Game Engine (2024 - 2026)</h1>
                 <!--links-->
                 <!-- <p>
                     <a href="" target="_blank">GitHub</a>
                     | 
                     <a href="" target="_blank">Download</a>
                 </p> -->
-                <!--details-->
-                <!-- <p>
-                    <b>Roles</b>:  <br>
-                    <b>Team Size</b>: <br>
-                    <b>Duration</b>: <br>
-                    <b>Platform</b>: <br>
-                </p> -->
+                <!-- details-->
+                <p>
+                    <b>Duration</b>: ~2 years<br>
+                    <b>Platform</b>: Java Swing | C# | Monogame
+                </p>
             </div>
 
             <div id="sum">
                 <!--Overview-->
-                <img class="highlightReel" src="/resources/gif/sesame/editor-v1-talk.gif" alt="">
+                <img class="highlightReel" src="/resources/img/sesame/locational-sound.png" alt="">
                 <div id="desc">
                     <h2>About</h2>
-                    <p></p>
+                    <p>Sesame is a tile-based, 2D game engine. Sesame's standardized toolset allows for the streamlining of video game development across all genres. An easy to use 2D level editor is also included and can be used to design, edit, and implement levels which can be imported into  any Sesame project.</p>
                 
                     <!--Features-->
-                    <h2>Features</h2>
+                    <!-- <h2>Features</h2>
                     <ul>
                         <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
                         <li></li>
-                    </ul>
+                    </ul> -->
                 </div> 
             </div>
 
             <div id="detail">
                 <!--Development History-->
+                <h2>Development History</h2>
+                <p>With 3 years of programming experience, 4 released projects, and numerous prototypes under my belt, I felt that I had developed a deep enough understanding of the elements that underlie most every game. As such, I strove to create a standardized set of tools with which future development could be streamlined.</p>
+                <p>This is the story of how I spent 2+ years of my life making infinite games, but no games.</p>
+
                 <h2>Early Development</h2>
-                <!--First prototype. Omg it sucked and failed Adrenaraid-->
+                <p>Work on Sesame began as a series of prototypes and tech-demos created in my free time over the course of a handful of months.</p>
+                <p>The main features implemented included:</p>
+                <ul>
+                    <li>Global state manager.</li>
+                    <li>Input handling.</li>
+                    <li>Audio management.</li>
+                    <li>Animated sprite support.</li>
+                </ul>
+                <p>Once I had collected the various proof of concepts into one package, I began work on a level editor. It was around this time that I wanted to test Sesame's feature set out in the wild, leading me to join <a href="https://trijam.itch.io/" target="_blank">Trijam #270</a> (which you can read about <a href="/projects/adrenaraid.html">here</a>). By the end of the jam, it was apparent that Sesame needed more work; specifically the editor.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/sesame-editor-v1.gif" class="singleimg">
                 </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Early tile-editor prototype.</figcaption>
+                </div>
+                <p>So to work I went.</p>
 
                 <h2>Editor V1</h2>
-                <!--Now we have a working editor isn't that nice-->
+                <p>Firstly, I needed a way to easily import a project's object classes for use in the editor. This was achieved by iterating over a set of class names retrieved at runtime, and adding an instance of the class to a selection menu. A similar process was used to allow for the retrieval of sprite assets such as background images.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/editor-v2-gen-showcase.gif">
                     <img src="/resources/gif/sesame/editor-v2-background.gif">
                 </div>
 
-                <!--feature set-->
+                <p>With object importing and a level IO system completed, it was time to develop the editor's capabilities. This included:</p>
+                <ul>
+                    <li>Ability to select object types.</li>
+                    <li>Ability to add and remove instances of an object.</li>
+                    <li>Ability to move objects.</li>
+                    <li>Ability to resize objects.</li>
+                    <li>Quality of life selection and movement tools.</li>
+                </ul>
                 <div class="example">
                     <img src="/resources/gif/sesame/editor-v1-add-object.gif">
                     <img src="/resources/gif/sesame/editor-v1-move-object.gif">
                     <img src="/resources/gif/sesame/editor-v1-resize-object.gif">
                     <img src="/resources/gif/sesame/editor-v1-group-select.gif">
                 </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Editor's features in action.</figcaption>
+                </div>
+                <p>Once the editor could reliably be used to create levels, it was time to test it in a real-world development setting.</p>
 
                 <h2>Sesame V1</h2>
-                <!--levels can be made and then used in games how cool-->
+                <p>In order to test the efficacy of Sesame's editor, I created a proof of concept in the style of top-down 2D adventure games. Each scene would have a player character, navigable level geometry, and interactable elements.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/editor-v1-level-make.gif">
                     <img src="/resources/gif/sesame/editor-v1-level-play.gif">
@@ -87,68 +114,92 @@
                     <div class="bar"></div>
                     <figcaption>Level being constructed in-editor (left) and then being played (right).</figcaption>
                 </div>
+                <p>By experimenting with this prototype, I further refined Sesame's toolkit; eventually attempting to create a full game in engine. Said game never came to fruition, as you can read about <a href="/projects/project-one.html">here</a>, but the experience of using Sesame for active development helped orient myself towards its new future.</p>
 
-                <!--switch to C# cuz also Project One went nowhere-->
-                <h2>Change to C#</h2>
-
-                <!--Now we're making some features!!-->
-                <div class="example">
-                    <img src="/resources/img/sesame/debug.png">
-                    <img src="/resources/gif/sesame/sesame-v4-debug-cam.gif">
-                    <img src="/resources/img/sesame/locational-sound.png">
-                </div>
-
-                <div class="example">
-                    <img src="/resources/gif/sesame/sesame-v4-collision.gif">
-                    <img src="/resources/gif/sesame/sesame-v4-tile-system.gif">
-                </div>
-
-                <div class="example">
-                    <img src="/resources/gif/sesame/sesame-v4-talk.gif">
-                    <img src="/resources/gif/sesame/sesame-v4-billboard-sprite.gif">
-                </div>
-
-                <h2>Editor V2</h2>
-                <!--Editor start-->
+                <h2>Switch to C#</h2>
+                <p>For years I had been developing in Java Swing. Java is not ideal for video games. So I switched C# Monogame.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/editor-v3-gen-showcase.gif" class="singleimg">
                 </div>
-                
-                <!--edditor woag-->
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Early editor prototype made in Monogame.</figcaption>
+                </div>
+
+                <h2>Sesame V2</h2>
+                <p>With the switch to a new development platform came the opportunity to revisit Sesame's features and implementations. A more experienced programmer at this point, optimizations were made across the board, but the scope of Sesame's development capabilities was also changed.</p>
+                <div class="example">
+                    <img src="/resources/img/sesame/debug.png" class="singleimg">
+                </div>
+
+                <p>One primarily limitation of Sesame up to this point was the static nature of its levels. Each level was a fixed size, viewable only from a fixed camera perspective. Already drowning in systems rewrites, I decided to spend a large amount of time retooling Sesame's render-pipeline to allow for free-form camera movement. This allowed for the inclusion of a variety of camera types (static, follow, controllable, etc) along with the ability to have levels of veritable size.</p>
+                <div class="example">
+                    <img src="/resources/gif/sesame/sesame-v4-talk.gif">
+                    <img src="/resources/gif/sesame/sesame-v4-debug-cam.gif">
+                </div>
+
+                <p>Another major improvement was the new tile manager. Now, tiles would keep track of objects overlapping their position and update only in response to movement. This change resulted in a large performance boost, as well as easier collision handling.</p>
+                <div class="example">
+                    <img src="/resources/gif/sesame/sesame-v4-tile-system.gif">
+                    <img src="/resources/gif/sesame/sesame-v4-collision.gif">
+                </div>
+
+                <p>I also spent time designing new features which could bolster Sesame's general development capabilities.</p>
+                <div class="example">
+                    <img src="/resources/img/sesame/locational-sound.png">
+                    <img src="/resources/gif/sesame/sesame-v4-billboard-sprite.gif">
+                </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Locational sound demo (left) and dynamic sprite layering or, "billboard sprites" (right).</figcaption>
+                </div>
+
+                <h2>Editor V2</h2>
+                <p>Following all the low-level changes made in the conversion to C#, I felt it was equally important to reimagine Sesame's editor. Two main additions lead the charge in redesigning the editor experience: freedom from grid-based placement, and in-editor management of object properties.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/sesame-v5-add-object.gif">
                     <img src="/resources/gif/sesame/sesame-v5-property-modify.gif">
                 </div>
 
-                <!--editor woag level management-->
+                <p>The inclusion of property management was no small task and took considerable development time. Similar to how object classes are populated at runtime, properties of a class instance are accessed upon request in-editor. In order to freely alter instance properties, responsive UI elements were created for differing variable types (Bool, Float, Vector2, etc) and dynamically populated as needed.</p>
+                <div class="example">
+                    <img src="/resources/img/sesame/sesame-v5-property-menu.png" class="singleimg">
+                </div>
+
+                <p>Work done on real-time property modification further allowed for granular control over the new and improved tile manager.</p>
+                <div class="example">
+                    <img src="/resources/gif/sesame/sesame-v5-tile-manager.gif">
+                    <img src="/resources/gif/sesame/sesame-v5-occupied-tiles.gif">
+                </div>
+
+                <p>Another large addition was the inclusion of a level select/management screen. From here, levels could be created, deleted, and edited freely. This was a huge step up from the previously console-based level management process.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/sesame-v5-level-open.gif">
                     <img src="/resources/gif/sesame/sesame-v5-level-create.gif">
                     <img src="/resources/gif/sesame/sesame-v5-level-delete.gif">
                 </div>
 
-                <!--collision system back and better than ever-->
-                <div class="example">
-                    <img src="/resources/gif/sesame/sesame-v5-tile-manager.gif">
-                    <img src="/resources/gif/sesame/sesame-v5-occupied-tiles.gif">
-                </div>
-
-                <!--attribute system shit was huge-->
-                <div class="example">
-                    <img src="/resources/img/sesame/sesame-v5-property-menu.png" class="singleimg">
-                </div>
-
-                <!--qol features-->
+                <p>Finally, improvements to the experience of editing levels were made to support full-scale development.</p>
                 <div class="example">
                     <img src="/resources/gif/sesame/sesame-v5-group-select-1.gif">
                     <img src="/resources/gif/sesame/sesame-v5-group-select-2.gif">
                 </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>New selection tool (right) vs old selection method (left).</figcaption>
+                </div>
                 <div class="example">
                     <img src="/resources/gif/sesame/sesame-v5-duplicate.gif" class="singleimg">
                 </div>
+                <div class="example-caption">
+                    <div class="bar"></div>
+                    <figcaption>Copy and paste tool demo.</figcaption>
+                </div>
+                <p>It was with this iteration of Sesame that I spent some time exploring new concepts for a possible <a href="/projects/sokoban.html">future title</a>. Said title never got beyond the prototyping phase, but helped to further illuminate Sesame's strengths and weaknesses.</p>
 
                 <!--Reflections-->
                 <h2>Postmortem</h2>
+                <p>Feeling thoroughly burnt out on the project, I decided to end active development of Sesame. My time working on the engine may not have led to any public-facing releases, but it was an invaluable introduction to a plethora of systems development and design principles. Through creating Sesame and its various iterations, I grew as a programmer, designer, and artist.</p>
                 <div class="example">
                     <img src="/resources/img/sesame/sesame-is-capable-of-mind-boggling-effects.png" class="singleimg">
                 </div>
@@ -156,7 +207,7 @@
                     <div class="bar"></div>
                     <figcaption>The Sesame Game Engine is capable of mind boggling effects.</figcaption>
                 </div>
-
+                <p>In the end, I didn't know if I would ever return to Sesame. All I knew was that whatever my <a href="/projects/onam.html">next game</a> would be, I'd be writing it from scratch.</p>
             </div>
         </div>
     </body>
