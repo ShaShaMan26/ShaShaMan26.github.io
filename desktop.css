@@ -276,12 +276,13 @@ footer {
     margin: 0;
     padding: 0;
 }
-.navbar p {
+.navbar a {
     margin: 0 0 0 .55%;
     padding: 0;
     font-size: 2rem;
     color: #FAF9F5;
     font-family: code;
+    text-decoration: none;
 }
 .navbar .navlinks {
     display: inline-grid;
