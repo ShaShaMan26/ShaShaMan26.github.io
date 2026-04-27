@@ -26,6 +26,10 @@
     font-family: code;
     src: url(/resources/font/code-light.otf);
 }
+@font-face {
+    font-family: code-bold;
+    src: url(/resources/font/code-bold.otf);
+}
 
 :root {
      color-scheme: light only;
@@ -314,4 +318,49 @@ embed {
     aspect-ratio: 1 / 1;
     box-sizing: border-box;
     padding: 2% 10% 0 10%;
+}
+
+.showcase {
+    margin-bottom: 3%;
+    h1 {
+        font-family: code-bold !important;
+        margin-bottom: 0;
+    }
+    h2 {
+        margin: 0;
+        font-size: 1.75rem !important;
+        font-family: futura !important;
+    }
+    img {
+        max-width: 50%;
+        pointer-events: all !important;
+        user-select: all !important;
+    }
+    img:hover {
+        opacity: 65%;
+        transition: opacity .3s ease;
+    }
+}
+.bio {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    align-items: center;
+    margin-top: 2%;
+    img {
+        width: 40% !important;
+    }
+    .biotext {
+        font-family: open-sans;
+        font-size: 1.2rem;
+        width: 60%;
+        background-color: #abb0a570;
+        border-radius: 16px;
+        box-sizing: border-box;
+        padding: 2% 2% 2% 2%;
+        h2 {
+            font-size: 2.5rem !important;
+            margin: 0;
+        }
+    }
 }
