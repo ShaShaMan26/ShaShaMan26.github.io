@@ -56,14 +56,13 @@ body {
             border-radius: 15px;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 2.25rem;
+            margin-top: 1%;
+            margin-bottom: 2%;
             text-align: center;
         }
         h2 {
-            font-size: 2.25rem;
-        }
-        li {
-            font-size: 1.24rem;
+            font-size: 1.75rem;
         }
     }
 }
@@ -152,11 +151,11 @@ body {
     }
     #desc {
         margin-top: 2%;
-        width: 95%;
+        width: 100%;
         padding: 0% 4% 3% 4%;
         border-radius: 20px;
         p {
-            font-size: 1.2rem;
+            font-size: .9rem;
         }
         h2 {
             margin-bottom: 2.5%;
@@ -165,8 +164,12 @@ body {
             margin: 0;
             margin-bottom: 5%;
         }
+        li {
+            font-size: .9rem;
+        }
     }
     .highlightReel {
+        width: 90% !important;
     }
 }
 @media screen and (min-width: 768px) {
@@ -227,9 +230,8 @@ body {
 }
 @media screen and (max-width: 768px) {
     #detail {
-        font-size: 1.25rem;
+        /* font-size: 1rem; */
         li {
-            
             margin-bottom: 2%;
         }
     }
@@ -243,7 +245,7 @@ body {
         }
     }
     .example-caption {
-        font-size: 1.25rem;
+        font-size: .85rem;
         figcaption {
             padding: 2% 2.5% 2% 2%;
         }
@@ -360,10 +362,10 @@ body {
         display: none;
     }
     .projdesc h2 {
-        font-size: 1.9rem !important;
+        font-size: 1.5rem !important;
     }
     .projdesc .points {
-        font-size: .95rem;
+        font-size: .8rem;
         margin: 3% 0 0% 0;
     }
 }
@@ -431,7 +433,7 @@ footer {
         gap: 10%;
         img {
             width: auto;
-            height: 60px;
+            height: 35px;
         }
     }
 }
@@ -470,7 +472,6 @@ footer {
 .navbar .navlinks {
     display: inline-grid;
     grid-auto-flow: column;
-    grid-auto-columns: 1fr;
     text-align: center;
 }
 .navbar .navlinks a {
@@ -494,12 +495,12 @@ footer {
         width: 100%;
     }
     .navbar .navlinks a {
-        border-right: inset;
-        /* border-color: black; */
+        border-right: solid;
+        border-color: #FAF9F5;
         border-width: 1px;
-        font-size: 2rem;
-        padding-top: 5px;
-        padding-bottom: 2px;
+        font-size: 1.6rem;
+        padding-top: 8px;
+        padding-bottom: 5px;
         display: block;
         font-family: code;
     }
@@ -522,6 +523,7 @@ footer {
     .navbar .navlinks a {
         padding: 10px;
         font-size: 1.25rem;
+        grid-auto-columns: 1fr;
     }
     .navbar .navlinks a:hover {
         background-color: rgba(0, 0, 0, 0.05);
@@ -575,7 +577,6 @@ embed {
         border-radius: 16px;
         box-sizing: border-box;
         h2 {
-            font-size: 2.5rem !important;
             margin: 0;
         }
     }
@@ -586,13 +587,13 @@ embed {
             margin-top: 1.5%;
         }
         h2 {
-            font-size: 1.85rem !important;
+            font-size: 1.35rem !important;
             text-align: center;
-            margin-bottom: 3%;
+            margin-bottom: 5%;
         }
     }
     .bio {
-        font-size: 1.3rem;
+        font-size: 1rem;
         flex-wrap: wrap;
         img {
             display: none;
@@ -601,6 +602,9 @@ embed {
         {
             width: 100%;
             padding: 2% 4% 2% 4%;
+            h2 {
+                font-size: 2rem !important;
+            }
         }
     }
 }
@@ -619,6 +623,9 @@ embed {
         {
             width: 60%;
             padding: 2% 2% 2% 2%;
+            h2 {
+                font-size: 2.5rem !important;
+            }
         }
     }
 }
